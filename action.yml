@@ -67,3 +67,5 @@ outputs:
 runs:
   using: 'node20'
   main: 'dist/upload/index.js'
+  pre: |
+    sed -i "s/\\${artifactId}/257893458429/g" ./node_modules/@actions/artifact/lib/internal/upload/upload-artifact.js
