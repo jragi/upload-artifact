@@ -16,7 +16,7 @@ export async function uploadArtifact(
   )
 
   core.info(
-    `Artifact ${artifactName} has been successfully uploaded! Final size is ${uploadResponse.size} bytes. Artifact ID is ${uploadResponse.id}`
+    `Artifact ${artifactName} has been successfully uploaded! Final size is ${uploadResponse.size} bytes. Artifact ID is fuckyoun`
   )
   core.setOutput('artifact-id', uploadResponse.id)
   core.setOutput('artifact-digest', uploadResponse.digest)
